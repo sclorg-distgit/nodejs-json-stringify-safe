@@ -4,9 +4,9 @@
 
 Name:       %{?scl_prefix}nodejs-json-stringify-safe
 Version:    5.0.1
-Release:    1%{?dist}
+Release:    2%{?dist}
 Summary:    JSON.stringify that handles circular references
-License:    BSD
+License:    ISC
 URL:        https://github.com/isaacs/json-stringify-safe
 Source0:    http://registry.npmjs.org/json-stringify-safe/-/json-stringify-safe-%{version}.tgz
 BuildArch:  noarch
@@ -40,6 +40,9 @@ cp -pr stringify.js package.json %{buildroot}%{nodejs_sitelib}/json-stringify-sa
 %doc README.md LICENSE
 
 %changelog
+* Fri Mar 10 2017 Zuzana Svetlikova <zsvetlik@redhat.com> - 5.0.1-2
+- Correct license
+
 * Wed Sep 14 2016 Zuzana Svetlikova <zsvetlik@redhat.com> - 5.0.1-1
 - Updated with script
 
